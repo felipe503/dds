@@ -1,0 +1,17 @@
+<%- include('partials/header') %>
+<section class="container">
+  <!--add content-->
+  <nav>
+    <ul class="list-group">
+      <li class="list-group-item clearfix list-group-item-info">
+        <a href="/create" class="btn btn-success pull-left">Create</a>
+        <span class="btn btn-default pull-right orderByDate">order by date</span>
+        <span class="btn btn-default pull-right orderById">order by id</span>
+        <span class="btn btn-default pull-right orderByName">order by name</span>
+      </li>
+      <%- include('partials/nav') %>
+    </ul>
+    <button type="button" class="displayAll btn btn-default">Display All</button><hr>
+  </nav>
+</section>
+<%- include('partials/footer') %>

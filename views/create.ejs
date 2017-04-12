@@ -1,0 +1,20 @@
+<%- include('partials/header') %>
+<section class="container">
+  <!--add content-->
+  <nav>
+    <ul class="list-group">
+      <li class="list-group-item list-group-item-info"><a href="/" class="btn btn-success">index</a></li>
+    </ul>
+  </nav>
+
+  <form class="clearfix" action="/insert" method="post">
+    <div class="form-group">
+      <label class="sr-only" for="service_name">Add service name</label>
+      <input class="form-control input-lg" type="text" name="service_name" value="" placeholder="add service name">
+      <label class="sr-only" for="service_id">Add service id</label>
+      <input class="form-control input-lg" type="text" name="service_id" value="" placeholder="add service id">
+    </div>
+    <button type="submit" class="btn btn-primary btn-lg pull-right">Add</button>
+  </form>
+</section>
+<%- include('partials/footer') %>

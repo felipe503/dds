@@ -1,0 +1,3 @@
+<% services.forEach(function(service){ %>
+  <li class="list-group-item clearfix" data-date="<%= service.service_date %>" data-id="<%= service.service_id %>" data-name="<%= service.service_name%>"><samp><%= service.service_id %> - <%= service.service_name %></samp><span class="btn btn-default pull-right disabled"><%= (service.service_date) %></span></li>
+<% }) %>
