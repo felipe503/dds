@@ -1,3 +1,5 @@
 # Ignore paths
 2017
 node_modules
+views/test.ejs
+views/partials/page-test.ejs
