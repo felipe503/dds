@@ -88,6 +88,11 @@ app.get('/create', function (req, res) {
     title: 'Create'
   });
 });
+app.get('/test', function (req, res) {
+  res.render('test',{
+    title: 'Page des tests'
+  });
+});
 /*
 db.services.find(function(err, docs){
   if(err) throw err;
