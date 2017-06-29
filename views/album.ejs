@@ -1,0 +1,18 @@
+<%- include('partials/header') %>
+<section class="container">
+  <h1>Album</h1>
+  <form class="clearfix" action="/insert" method="post">
+    <div class="form-group">
+      <label class="sr-only" for="album_name">Add album name</label>
+      <input class="form-control input-lg" type="text" name="album_name" value="" placeholder="Add album system name">
+      <label class="sr-only" for="album_title">Add album title</label>
+      <input class="form-control input-lg" type="text" name="album_title" value="" placeholder="Add album title">
+      <label class="sr-only" for="album_number">Add album image number</label>
+      <input class="form-control input-lg" type="number" name="album_number" value="10">
+      <label class="sr-only" for="album_description">Add album image number</label>
+      <textarea class="form-control" name="album_description" rows="3"></textarea>
+      <button type="button" class="btn btn-default btn-block" name="createAlbum">create album</button>
+    </div>
+  </form>
+</section>
+<%- include('partials/footer') %>

@@ -20,6 +20,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 //Set static path
 app.use('/public', express.static(path.join(__dirname, 'public')));
+
 //let pages = ['index'];
 var services='';
 
@@ -91,6 +92,11 @@ app.get('/create', function (req, res) {
 app.get('/test', function (req, res) {
   res.render('test',{
     title: 'Page des tests'
+  });
+});
+app.get('/album', function (req, res) {
+  res.render('album',{
+    title: 'Create an album'
   });
 });
 /*
