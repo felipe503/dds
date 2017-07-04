@@ -68,4 +68,11 @@ $(document).ready(function(){
       }
     });
   });
+  /*
+  $('input[name=album_name]').on('input',function(){
+    value = $(this).val();
+    value = value.replace(/ /g,'_').replace(/-/g,'_').replace(/–/g,'_').toLowerCase();
+    $('input[name=album_name]').val(value);
+  });
+  */
 });
