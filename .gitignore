@@ -3,3 +3,4 @@
 node_modules
 views/test.ejs
 views/partials/page-test.ejs
+public\js\cta.kml
