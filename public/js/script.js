@@ -36,16 +36,17 @@ $(document).ready(function(){
     var album_title = $('input[name=album_title]').val();
     var album_number = $('input[name=album_number]').val();
     var album_description = $('textarea').val();
+    var album_arr = $('input[name=album_arr]').val();//'arrond_out_fr';
     var images='';
     for(var i=0;i<album_number;i++){
-      images+='<li><a title="'+album_title+'" href="/pls/portal/docs/page/arrond_out_fr/media/images/album_photos/album_'+album_name+'/'+album_name+'_0'+(i+1)+'.jpg" rel="lightbox-'+album_name+'">'+(i+1)+'</a></li>';
+      images+='<li><a title="'+album_title+'" href="/pls/portal/docs/page/'+album_arr+'/media/images/album_photos/album_'+album_name+'/'+album_name+'_0'+(i+1)+'.jpg" rel="lightbox-'+album_name+'">'+(i+1)+'</a></li>';
     }
     var html = '';
     html+='<h1>'+album_title+'</h1>';
     html+='<table class="encadre_gen"> <tbody> <tr> <td> <table class="imageAvecLeg imageAvecLegLien imageFltDrt" style="width: 171px;" cellspacing="0"> <tbody> <tr>';
 
-    html+='<td><a title="'+album_title+'" href="/pls/portal/docs/page/arrond_out_fr/media/images/album_photos/album_'+album_name+'/'+album_name+'_01.jpg" rel="lightbox-'+album_name+'">';
-    html+='<img title="'+album_title+'" src="/pls/portal/docs/page/arrond_out_fr/media/images/album_photos/album_'+album_name+'/'+album_name+'_01.jpg" alt="'+album_name+'" width="171" height="114" /><span class="txtCont"><strong>Consultez la galerie photo</strong></span></a>';
+    html+='<td><a title="'+album_title+'" href="/pls/portal/docs/page/'+album_arr+'/media/images/album_photos/album_'+album_name+'/'+album_name+'_01.jpg" rel="lightbox-'+album_name+'">';
+    html+='<img title="'+album_title+'" src="/pls/portal/docs/page/'+album_arr+'/media/images/album_photos/album_'+album_name+'/'+album_name+'_01.jpg" alt="'+album_name+'" width="171" height="114" /><span class="txtCont"><strong>Consultez la galerie photo</strong></span></a>';
     html+='<table class="cont_imgCache"> <tbody> <tr> <td> <ul>';
     /*image list here*/
     html+=images;
