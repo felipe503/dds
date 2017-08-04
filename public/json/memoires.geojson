@@ -1,0 +1,53 @@
+{
+   "type":"FeatureCollection",
+   "crs":{
+      "type":"name",
+      "properties":{
+         "name":"memoiresdesmontrealais-collection"
+      }
+   },
+   "features":[
+      {
+         "type":"Feature",
+         "properties":{
+            "id":1,
+            "annee":2017,
+            "nouveau":1,
+            "en_vedette":1,
+            "clean_url":"terrasses-roy",
+            "titre":"Terrasses Roy",
+            "amorce":"Un lieu d’agriculture et de rencontre",
+            "date":"À partir du 22 juin 2017",
+            "description":"<p>La piétonnisation de la rue Roy Est sera appelée à évoluer et à se bonifier au cours des trois prochaines années. Son aménagement temporaire, situé entre la rue De Bullion et l’avenue Coloniale, comprend quatre ilots en terrasses axés sur l’agriculture urbaine et une borne de réparation de vélos.</p>",
+            "objectif":"<p>Offrir une place publique verte et rassembleuse, inclusive et innovante, pour et par les gens du quartier, qui rallie la communauté autour des bienfaits de l’agriculture urbaine.</p>",
+            "elements_interet":"<ul><li>4 îlots-terrasses plantées en bois</li><li>1 borne de réparation de vélos</li></ul>",
+            "medias":[
+               {
+                  "name":"RueRoy_01.jpg",
+                  "mime_type":"image/jpeg",
+                  "credit":"Ville de Montréal",
+                  "alt":"Future rue Roy Est",
+                  "uri":""
+               }
+            ],
+            "latitude":45.51659,
+            "longitude":-73.559042,
+            "links":[
+               {
+                  "text":"En savoir plus",
+                  "name":"",
+                  "type":"website",
+                  "url":"http://ville.montreal.qc.ca/portal/page?_pageid=7297,142639099&_dad=portal&_schema=PORTAL"
+               }
+            ]
+         },
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -73.574977,
+               45.51659
+            ]
+         }
+      }
+   ]
+}

@@ -2,5 +2,7 @@
 2017
 node_modules
 views/test.ejs
+views/map.ejs
 views/partials/page-test.ejs
+views/partials/carte.ejs
 public\js\cta.kml

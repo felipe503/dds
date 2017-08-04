@@ -99,6 +99,11 @@ app.get('/album', function (req, res) {
     title: 'Create an album'
   });
 });
+app.get('/map', function (req, res) {
+  res.render('map',{
+    title: 'Carte mémoire de Montréalais'
+  });
+});
 /*
 db.services.find(function(err, docs){
   if(err) throw err;
