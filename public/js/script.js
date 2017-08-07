@@ -38,8 +38,10 @@ $(document).ready(function(){
     var album_description = $('textarea').val();
     var album_arr = $('input[name=album_arr]').val();//'arrond_out_fr';
     var images='';
-    for(var i=0;i<album_number;i++){
-      images+='<li><a title="'+album_title+'" href="/pls/portal/docs/page/'+album_arr+'/media/images/album_photos/album_'+album_name+'/'+album_name+'_0'+(i+1)+'.jpg" rel="lightbox-'+album_name+'">'+(i+1)+'</a></li>';
+    var index = 0;
+    for(var i=1;i<album_number;i++){
+      index = (i<=8) ? '_0'+(i+1):'_'+(i+1);
+      images+='<li><a title="'+album_title+'" href="/pls/portal/docs/page/'+album_arr+'/media/images/album_photos/album_'+album_name+'/'+album_name+index+'.jpg" rel="lightbox-'+album_name+'">'+(i+1)+'</a></li>';
     }
     var html = '';
     html+='<h1>'+album_title+'</h1>';

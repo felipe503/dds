@@ -1,3 +1,82 @@
+<link rel="stylesheet" href="http://ville.montreal.qc.ca/pls/portal/docs/page/grands_parcs_fr/media/styles/local.css">
+
+<div id="onglets" class="fiche_onglets">
+  <ul class="onglet-nav">
+    <li><a class="pietons" href="#pietons">Piétons</a></li>
+    <li><a class="cyclistes" href="#cyclistes">Cyclistes</a></li>
+    <li><a class="automobilistes" href="#automobilistes">Automobilistes</a></li>
+    <li><a class="vehicules_lourds" href="#vehicules_lourds">Véhicules lourds</a></li>
+    <li><a class="autres_mesures" href="#autres_mesures">Autres mesures</a></li>
+    <li><a class="campagne_de_communication" href="#campagne_de_communication">Campagne de communication</a></li>
+  </ul>
+</div>
+<div id="contenu" class="contenu_fiche">
+  <div class="pietons onglet-content">
+    <h1>Piétons</h1>
+  </div>
+  <div class="cyclistes onglet-content">
+    <h1>Cyclistes</h1>
+  </div>
+  <div class="automobilistes onglet-content">
+    <h1>Automobilistes</h1>
+  </div>
+  <div class="vehicules_lourds onglet-content">
+    <h1>Véhicules lourds</h1>
+  </div>
+  <div class="autres_mesures onglet-content">
+    <h1>Autres mesures</h1>
+  </div>
+  <div class="campagne_de_communication onglet-content">
+    <h1>Campagne de communication</h1>
+  </div>
+</div>
+<script type="text/javascript">
+  //afichage initiale, premier onglet acitf et contenu affiché en consequance
+  var hash = '';
+  if(window.location.hash) {
+    hash = window.location.hash;
+  }
+  if(hash!='')
+  {
+    hash = hash.replace('#','');
+    $('#onglets .onglet-nav > li a.'+hash+'').addClass('fiche_actif');
+  }
+  else{
+    $('#onglets .onglet-nav > li:first a').addClass('fiche_actif');
+  }
+  var content = $('#contenu .onglet-content');
+  if(hash!=''){
+    hash = hash.replace('#','');
+    $.each(content, function(){
+      if($(this).hasClass(hash)){
+        $(this).show();
+      }
+      else{
+        $(this).hide();
+      }
+    });
+  }
+  else{
+    $.each(content, function(i){
+      if(i > 0){
+        $(this).hide();
+      }
+    });
+  }
+  $('#onglets .onglet-nav li a').click(function(e){
+    $('.fiche_actif').removeClass('fiche_actif');
+    var currentClass = $(this).attr('class');
+    $(this).addClass('fiche_actif');
+    $.each(content, function(){
+      $(this).hide();
+    });
+    $('.'+currentClass).show();
+  });
+</script>
+
+
+
+<!--
 <div id="scriptContent">
 
 </div>
@@ -31,3 +110,4 @@
 
   });
 </script>
+-->
