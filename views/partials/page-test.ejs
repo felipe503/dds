@@ -76,7 +76,7 @@
 
 
 
-<!--
+
 <div id="scriptContent">
 
 </div>
@@ -87,20 +87,20 @@
     var label = $('a[title=Langue]').text();
     var lang = label == 'English' ? 'fr':'en';
     $('a[title=Langue]').click(function(e){
-      if(typeof params['id']!== 'undefined'){
+      //if(typeof params['id']!== 'undefined'){
         e.preventDefault();
-        var id = params['id'];
+        //var id = params['id'];
         if(lang=='fr'){
-          var baseUrlFr = 'http://ville.montreal.qc.ca/portal/page?_pageid=9657,142727801&_dad=portal&_schema=PORTAL';
-          var actualitesUrl = 'http://ville.montreal.qc.ca/pls/portal/url/page/centre_secu_civile_en/rep_csc/actualites/coll_actus/';
-          window.location.href  = baseUrlFr+'&id=17188&ret='+actualitesUrl;
+          var baseUrlFr = 'http://ville.montreal.qc.ca/portal/page?_pageid=5977,142821121&_dad=portal&_schema=PORTAL';
+          //var actualitesUrl = 'http://ville.montreal.qc.ca/pls/portal/url/page/centre_secu_civile_en/rep_csc/actualites/coll_actus/';
+          window.location.href  = baseUrlFr;
         }
         else {
-          var baseUrlEn = 'http://ville.montreal.qc.ca/portal/page?_pageid=7637,81889776&_dad=portal&_schema=PORTAL';
-          var actualitesUrl = 'http://ville.montreal.qc.ca/pls/portal/url/page/centre_secu_civile_fr/rep_csc/actualites/coll_actus/';
-          window.location.href  = baseUrlEn+'&id=16914&ret='+actualitesUrl;
+          var baseUrlEn = 'http://ville.montreal.qc.ca/portal/page?_pageid=8957,142798610&_dad=portal&_schema=PORTAL';
+          //var actualitesUrl = 'http://ville.montreal.qc.ca/pls/portal/url/page/centre_secu_civile_fr/rep_csc/actualites/coll_actus/';
+          window.location.href  = baseUrlEn;
         }
-      }
+      //}
     });
   });
 </script>
@@ -110,4 +110,3 @@
 
   });
 </script>
--->
